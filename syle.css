@@ -1,0 +1,117 @@
+@charset "utf-8";
+@font-face{
+    font-family: font1;
+    src: url(fontes/Cute\ Notes.ttf);
+
+}
+
+body{
+    margin: 0%;
+    padding: 0%;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(https://png.pngtree.com/background/20230412/original/pngtree-coffee-background-picture-image_2393936.jpg);
+}
+
+header{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    height: 460px;
+    width: 800px;
+    overflow: hidden;
+    position:absolute ;
+    transform: translate(-50px, -50px);
+    top:30%;
+    left: 50%;
+}
+
+.navegacao{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+}
+ 
+
+.imagem img{
+height: 100%;
+width: 100%;
+}
+
+.bar{
+    background-color: #8a2be2;
+    width: 30px;
+    height: 5px;
+    margin: 6px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.bar:hover{
+    background: #5c4fb1;
+}
+
+input{
+    display: none;
+}
+
+.imagens{
+    display: flex;
+    width: 600%;
+    height: 100%;
+}
+
+.imagem{
+    width: 16.6666666667%;
+    transition: .5s;
+}
+
+#imagem1:checked ~ .img1{
+    margin-left: 0;
+}
+
+#imagem2:checked ~ .img1{
+    margin-left: -16.6666666667%;
+}
+
+#imagem3:checked ~ .img1{
+    margin-left: -33.3333333333%;
+}
+
+#imagem4:checked ~ .img1{
+    margin-left: -50%;
+}
+
+#imagem5:checked ~ .img1{
+    margin-left: -66.6666666667%;
+}
+
+
+h1{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: font1;
+}
+
+h2{
+    text-align: end;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: font1;
+}
+
+td{
+    padding: 40px;
+    margin: 5px;
+}
+
+table{
+    color: #000306;
+    background-color:#eccda8 ;
+}
+    
+
+    
